@@ -11,6 +11,16 @@ on:
       type: boolean
       required: false
       default: false
+  workflow_dispatch:
+   inputs:
+    arch:
+      type: string
+      description: 'Architecture to build'
+      default: 'ubuntu-latest'
+    upload-image:
+      type: boolean
+      required: false
+      default: false
 
 permissions:
   contents: read
